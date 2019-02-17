@@ -2,8 +2,14 @@
 <html>
 <head>
   <meta charset='utf-8' />
-  <title>Display a map</title>
-  <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+  <title>Pandemic</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'/>
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet/v1.4.0/leaflet.css"/>
+  <!-- Javascript Libraries -->
+<script src="http://cdn.leafletjs.com/leaflet/v1.4.0/leaflet.js"></script>
+<!-- leaflet mapbox js -->
+<script src="http://rawgit.com/mapbox/mapbox-gl-leaflet/master/leaflet-mapbox-gl.js"></script>
   <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
   <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet' />
   <style>
@@ -14,6 +20,10 @@
 <body>
 
 <div id='map'></div>
+<div>Icons made by <a href="https://www.freepik.com/" title="Freepik">Freepik</a>
+  from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+  is licensed by <a href="http://creativecommons.org/licenses/by/3.0/"
+  title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
 <script>
 mapboxgl.accessToken = 'pk.eyJ1Ijoicm90aGJhcnMiLCJhIjoiY2pycjA2eGJ2MXVqMjN5dGtnbzd0YWtyaiJ9.zxDg7FNL0xSfXF5Gghf8Vw';
 const map = new mapboxgl.Map({
